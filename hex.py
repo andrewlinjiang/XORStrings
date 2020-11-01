@@ -27,4 +27,9 @@ if (mode == "numOut"):
 		res+= str(hex(i)[2:]) +" "
 	print(res)
 
+if (mode == "human"):
+	res = ""
+	for i in output:
+		res+= chr(i)
+	print(res)
 
