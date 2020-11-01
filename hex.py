@@ -19,6 +19,12 @@ output = []
 while (counter < len(inp)):
 	output.append(ord(inp[counter]) ^ ord(key[counter % len(key)]))
 	counter += 1
-print(output)
+
+
+if (mode == "numOut"):
+	res = ""
+	for i in output:
+		res+= str(hex(i)[2:]) +" "
+	print(res)
 
 
